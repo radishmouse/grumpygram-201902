@@ -14,8 +14,34 @@ html, body {
     width: 150px;
     /* yes, but we're trying to break it :) */
     /* display: inline-block; */
+
+    position: absolute;
+    top: 0;  
 }
 
 .picture-frame img {
     width: 100%;
+}
+
+#one {    
+    left: 0;
+    z-index: 10;
+}
+
+#two {    
+    top: 160px; 
+    left: 65px;
+    z-index: 11;
+}
+
+#three {
+    top: 170px; 
+    left: 80px;
+}
+
+.hamster-playground {
+    position: relative;
+    /* top: 400px; */
+    /* left: 200px; */
+    /* background: cornflowerblue; */
 }

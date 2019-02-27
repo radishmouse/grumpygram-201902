@@ -11,11 +11,37 @@ html, body {
 }
 
 .picture-frame {
-    width: 150px;
+    width: 25%;
     /* yes, but we're trying to break it :) */
     /* display: inline-block; */
 }
 
 .picture-frame img {
     width: 100%;
+}
+
+.hamster-playground {
+    border: 5px solid gold;
+    display: flex;
+
+    /* 
+    if you set the height,
+    that's how big the element
+    will be. then the hamsters will
+    overflow.
+     */
+    /* height: 300px; */
+    min-height: 300px;
+    
+    flex-direction: column;
+
+    /* how to line up on main axis */
+    justify-content: center;
+
+    /* how to line up on cross axis */
+    align-items: center;
+
+    /* flex-wrap: wrap; */
+
+
 }

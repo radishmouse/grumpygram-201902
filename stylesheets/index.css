@@ -11,13 +11,22 @@ html, body {
 }
 
 .picture-frame {
-    width: 25%;
+    width: 80%;
     /* yes, but we're trying to break it :) */
     /* display: inline-block; */
+    border: 2px solid cornflowerblue;
+    /* height: 200px; */
+
+    /* wow! centering! */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .picture-frame img {
     width: 100%;
+    /* display: block; */
 }
 
 .hamster-playground {
@@ -36,12 +45,11 @@ html, body {
     flex-direction: column;
 
     /* how to line up on main axis */
-    justify-content: center;
+    justify-content: flex-start;
 
     /* how to line up on cross axis */
     align-items: center;
 
     /* flex-wrap: wrap; */
-
-
 }
+

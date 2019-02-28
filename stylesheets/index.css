@@ -10,6 +10,26 @@ html, body {
     width: 100%;
 }
 
+@keyframes roller-coaster {
+    0% {
+        /* opacity: 1; */
+        transform: rotate(0);
+    }
+
+    50% {
+        /* opacity: 1.0; */
+        transform: rotate(2700deg);
+    }
+
+    100% {
+        /* opacity: 0; */
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
 .picture-frame {
     width: 80%;
     /* yes, but we're trying to break it :) */
@@ -46,7 +66,7 @@ html, body {
     width: 100%;
     opacity: 0.1;
     /* display: block; */
-    transition: all .3s ease-in-out;
+    /* transition: all .3s ease-in-out; */
     /*
         1. property names or the word "all"
         2. duration in seconds or ms
@@ -56,8 +76,11 @@ html, body {
 
 /* state b */
 .picture-frame img.big {
-    transform: scale(2.5);
-    opacity: 1.0;
+    /* transform: scale(2.5);
+    opacity: 1.0; */
+    opacity: 1;
+    border-radius: 50%;
+    animation: roller-coaster 1s ease-in-out;
 }
 
 .hamster-playground {

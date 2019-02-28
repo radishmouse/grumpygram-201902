@@ -37,15 +37,27 @@ html, body {
     img, *not* the picture-frame
  */
 .picture-frame:hover img{
-    transform: scale(1.10);
-    opacity: 1.0;
+    /* transform: scale(1.10); */
+    /* opacity: 1.0; */
 }
 
-
+/* state a */
 .picture-frame img {
     width: 100%;
-    opacity: 0.9;
+    opacity: 0.1;
     /* display: block; */
+    transition: all .3s ease-in-out;
+    /*
+        1. property names or the word "all"
+        2. duration in seconds or ms
+        3. timing function
+    */
+}
+
+/* state b */
+.picture-frame img.big {
+    transform: scale(2.5);
+    opacity: 1.0;
 }
 
 .hamster-playground {

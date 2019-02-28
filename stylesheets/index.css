@@ -11,7 +11,7 @@ html, body {
 }
 
 .picture-frame {
-    width: 80%;
+    width: 30%;
     /* yes, but we're trying to break it :) */
     /* display: inline-block; */
     border: 2px solid cornflowerblue;
@@ -21,6 +21,8 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* flex: 0 0 auto; */
 
 }
 
@@ -42,7 +44,7 @@ html, body {
     /* height: 300px; */
     min-height: 300px;
     
-    flex-direction: column;
+    flex-direction: row;
 
     /* how to line up on main axis */
     justify-content: flex-start;
@@ -50,15 +52,25 @@ html, body {
     /* how to line up on cross axis */
     align-items: center;
 
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 /* it's like an if statement, but for CSS */
 @media screen and (min-width: 500px) {
-
     body {
         background: red;
     }
+    /* .picture-frame {
+        width: 40%;
+        margin: 20px 0;
+        
+    }
+    .hamster-playground {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    } */
 
 
 }
@@ -67,7 +79,12 @@ html, body {
 @media screen and (min-width: 700px) {
 
     body {
-        background: purple;
+        background: blue;
     }
+/* 
+    .logo-text {
+        font-size: 32px;
+        text-align: center;
+    } */
 
 }

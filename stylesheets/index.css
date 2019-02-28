@@ -11,7 +11,7 @@ html, body {
 }
 
 .picture-frame {
-    width: 30%;
+    width: 80%;
     /* yes, but we're trying to break it :) */
     /* display: inline-block; */
     border: 2px solid cornflowerblue;
